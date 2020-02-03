@@ -82,8 +82,8 @@ public class SeckillOrderServiceImpl implements SeckillOrderService {
     }
 
     @Override
-    public OrderInfo getOrderInfo(long orderId) {
-        SeckillOrder seckillOrder = seckillOrderMapper.selectByPrimaryKey(orderId);
+    public OrderInfo getOrderInfo(Long orderId) {
+        SeckillOrder seckillOrder = seckillOrderMapper.selectByOrderId(orderId);
         if(seckillOrder == null){
             return null;
         }

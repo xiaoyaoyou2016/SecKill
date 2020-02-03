@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class MQConfig {
 	
-	public static final String MIAOSHA_QUEUE = "seckill.queue";
+	public static final String MIAOSHA_QUEUE = "seckill_queue";
 	public static final String QUEUE = "queue";
 	/*public static final String TOPIC_QUEUE1 = "topic.queue1";
 	public static final String TOPIC_QUEUE2 = "topic.queue2";
@@ -27,7 +27,7 @@ public class MQConfig {
 	}
 	@Bean
 	public Queue queue() {
-		return new Queue(QUEUE, true);
+		return new Queue(MIAOSHA_QUEUE, true);
 	}
 	/**
 	 * Direct模式 交换机Exchange

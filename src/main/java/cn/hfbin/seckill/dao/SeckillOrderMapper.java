@@ -12,6 +12,8 @@ public interface SeckillOrderMapper {
 
     SeckillOrder selectByPrimaryKey(Long id);
 
+    SeckillOrder selectByOrderId(Long orderId);
+
     int updateByPrimaryKeySelective(SeckillOrder record);
 
     int updateByPrimaryKey(SeckillOrder record);

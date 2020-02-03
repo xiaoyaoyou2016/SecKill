@@ -20,7 +20,7 @@ public interface SeckillOrderService {
 
     OrderInfo insert(User user , GoodsBo goodsBo);
 
-    OrderInfo getOrderInfo(long orderId);
+    OrderInfo getOrderInfo(Long orderId);
 
     long getSeckillResult(Long userId, long goodsId);
 

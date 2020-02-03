@@ -19,6 +19,12 @@
     from seckill_order
     where id = #{id,jdbcType=BIGINT}
   </select>
+  <select id="selectByOrderId" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select
+    <include refid="Base_Column_List" />
+    from seckill_order
+    where order_id = #{orderId,jdbcType=BIGINT}
+  </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
     delete from seckill_order
     where id = #{id,jdbcType=BIGINT}
